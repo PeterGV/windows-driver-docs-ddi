@@ -67,15 +67,15 @@ The driver does not require a framework file object.
 
 ### -field WdfFileObjectWdfCanUseFsContext
 
-The driver requires a framework file object. The framework can store the object's handle in the <b>FsContext</b> member of the file's Windows Driver Model (WDM) <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object">FILE_OBJECT</a> structure.
+The driver requires a framework file object. The framework can store internal context information in the <b>FsContext</b> member of the file's Windows Driver Model (WDM) <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object">FILE_OBJECT</a> structure.
 
 ### -field WdfFileObjectWdfCanUseFsContext2
 
-The driver requires a framework file object. The framework can store the object's handle in the <b>FsContext2</b> member of the file's WDM FILE_OBJECT structure.
+The driver requires a framework file object. The framework can store internal context information in the <b>FsContext2</b> member of the file's WDM FILE_OBJECT structure.
 
 ### -field WdfFileObjectWdfCannotUseFsContexts
 
-The driver requires a framework file object. The framework cannot store the object's handle in the <b>FsContext</b> or <b>FsContext2</b> member of the file's WDM FILE_OBJECT structure, because one or more drivers are using these members. Therefore, the framework must store the handle internally.
+The driver requires a framework file object. The framework cannot store internal context information in the <b>FsContext</b> or <b>FsContext2</b> member of the file's WDM FILE_OBJECT structure, because one or more drivers are using these members. Therefore, the framework must store the handle internally.
 
 ### -field WdfFileObjectCanBeOptional
 
