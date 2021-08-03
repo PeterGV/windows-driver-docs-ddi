@@ -58,11 +58,11 @@ When *ConfigType* is **CommonBufferConfigTypeLogicalAddressLimits**, describes t
 
 ### -field LogicalAddressLimits.MinimumAddress
 
-Provides the (inclusive) minimum starting logical address of the common buffer being created.
+Provides the (inclusive) minimum starting device bus logical address of the common buffer being created.
 
 ### -field LogicalAddressLimits.MaximumAddress
 
-Provides the (inclusive) maximum final logical address of the common buffer being created.
+Provides the (inclusive) maximum final device bus logical address of the common buffer being created.
 
 ### -field SubSection
 
